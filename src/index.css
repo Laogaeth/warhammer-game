@@ -5,6 +5,12 @@ body {
   font-family:'Montserrat',sans-serif;
   font-size: 1.5rem;
   text-align: center;
-  background-color: black;
+  background: url(/public/images/background.avif);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  
   color: #fff;
 }

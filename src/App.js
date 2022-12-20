@@ -1,13 +1,16 @@
-
 import { useState } from 'react';
 import './App.css';
+import SingleCard from "./components/SingleCard";
+
+
+
 const cardImages = [
-  { src: "./images/Book.svg" },
-  { src: "./images/Demon.svg" },
-  { src: "./images/Hand.svg" },
-  { src: "./images/Horus.svg" },
-  { src: "./images/Knight.svg" },
-  { src: "./images/Heretics.svg" },
+  { "src": "./images/Book.svg" },
+  { "src": "./images/Demon.svg" },
+  { "src": "./images/Hand.svg" },
+  { "src": "./images/Horus.svg" },
+  { "src": "./images/Knight.svg" },
+  { "src": "./images/Heretics.svg" },
 ];
 
 
@@ -31,14 +34,11 @@ function App() {
     <div className="App">
       <h1>Skull Throne Match</h1>
       <button onClick={shuffleCards}>New Skull</button>
+      
+
       <div className="card-grid">
         {cards.map(card => (
-          <div className='card' key={card.id}>
-            <div>
-              
-            </div>
-
-          </div>
+        <SingleCard key={card.id} card={card} />
         ))}
       </div>
     </div>
